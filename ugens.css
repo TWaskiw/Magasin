@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+/* ----------- Navigation ----------- */
+.logo {
+    display: none;
+    width: 72px;
+    height: 72px;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.text-logo{
+    font-family: 'Source Code Pro', monospace;
+    margin-right: auto;
+    cursor: pointer;
+    font-size: 30px;
+    color: #37447e;
+}
+  
+li, a {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 500;
+    font-size: 16px;
+    color: #929ecc;
+    text-decoration: none;
+}
+
+button{
+    color: #fff;
+    font-size: 200px;
+}
+
+header {
+    height: 75px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: #7182c5;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background:#929ecc;
+
+    transition: width .3s;
+}
+
+.nav__links li a:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+}
+
+.emne-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Computer*/
+@media only screen and (max-width: 1200px) {
+
+}
+
+/* Tablet*/
+@media only screen and (max-width: 768px) {
+    label {
+        display: block;
+        cursor: pointer;
+        color:#929ecc;
+    }
+
+    button{
+        font-size: 100px;
+    }
+
+    .cta {
+        display: none;
+    }
+    .nav__links {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .nav__links a {
+        display: block;
+        border-bottom: 1px solid #929ecc;
+        margin: 0;
+    }
+    #toggle:checked + .nav__links {
+        display: block;
+    }
+
+    .nav__links {
+        display: none;
+    }
+    .nav_links ul {
+        
+    }
+    .logo {
+        display: block;
+        width: 72px;
+        height: 72px;
+    }
+
+    .text-logo{
+        display: none;
+    }
+
+}
+
+/*Smartphone*/
+@media only screen and (max-width: 400px) {
+    label {
+        display: block;
+        cursor: pointer;
+        color: lightsalmon;
+    }
+
+    button{
+        font-size: 55px;
+    }
+
+    .cta {
+        display: none;
+    }
+    .nav__links {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .nav__links a {
+        display: block;
+        border-bottom: 1px solid lightsalmon;
+        margin: 0;
+    }
+    #toggle:checked + .nav__links {
+        display: block;
+    }
+
+    .nav__links {
+        display: none;
+    }
+    .nav_links ul {
+        
+    }
+
+    .logo {
+        display: block;
+        width: 72px;
+        height: 72px;
+    }
+
+    .text-logo{
+        display: none;
+    }
+
+    
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="My coding-, design-, and communication-experience" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Waskiw - Design and Coding</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="img/logo.svg" alt="logo">
+        <a class="text-logo">Ugens kode</a>
+        <nav>
+            <ul class="nav__links">
+                <div class="dropdown">
+                    <li><a href="ugensemne.html">Ugens</a></li>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                    </div>
+
+                </div>
+
+                <li><a href="#">Oversigt</a></li>
+                <div class="dropdown">
+                    <li><a href="#">Guides</a></li>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                    </div>
+                </div>
+                <li><a href="#">Udforsk</a></li>
+            </ul>
+        </nav>
+
+        <div class="mobile-nav" id="links">
+            <ul>
+                <li><a href="ugensemne.html">Ugens</a></li>
+                <li><a href="#">Oversigt</a></li>
+                <li><a href="#">Guides</a></li>
+                <li><a href="#">Udforsk</a></li>
+            </ul>
+        </div>
+
+
+        <a href="javascript:void(0);" class="burger-menu" onclick="openMenu()">
+            <i class="fa fa-bars"></i>
+        </a>
+
+    </header>
+    <div class='container'>
+        <div>
+            <div class="title" id='title'></div>
+            <div class="under-title" id='under-title'></div>
+            <div class="title-end" id='title-end'></div>
+        </div>
+    </div>
+
+    <div class="ugens-overskrift">
+        <a class="flexbox-button" href="ugensemne.html">
+            FLEXBOX
+        </a>
+
+    </div>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
